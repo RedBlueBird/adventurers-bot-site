@@ -71,15 +71,14 @@ Discord blue 7289DA
 */
 
 #hometown-img {
-  background-image: url("../images/hometownmap.png");
+  background-image: url("../images/HomeTownMap.png");
 }
 
 #botlogo-img {
-  background-image: url("../images/boticon.png");
+  background-image: url("../images/BotIcon.png");
 }
 
 .bg-image {
-  background-image: url("../images/hometownmap.png");
   height: 100%;
 
   filter: blur(8px);
