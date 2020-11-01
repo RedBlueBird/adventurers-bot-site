@@ -1,0 +1,158 @@
+body, html {
+	height: 100%;
+}
+
+header {
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+  	z-index: 10;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav ul{
+	list-style: none;
+	background-color: #6DA83E;
+	border-top: 3px solid #006936;
+	border-bottom: 3px solid #006936;
+
+	font-weight: bold;
+	color: #004736;
+	font-size: 140%;
+
+	padding: 20px;
+	padding-left: 110px;
+}
+
+nav ul li{
+  display: inline;
+
+  padding: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+nav ul li:not(:first-child):hover {
+  background-color: rgb(238,238,238);
+  background-color: rgba(238,238,238,0.4);
+}
+
+nav ul li a img{
+	position: absolute;
+	width: 80px;
+	transform: translate(-80px, -20px);
+}
+
+
+/*nav ul li a img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}*/
+
+/*
+Color Palettes
+---------------
+Light green 6DA83E
+Dark green 006936
+Pale dark green 004736
+
+Light brown BFAC69
+Dark brown 5E462A
+
+Light gray 403737
+Dark gray 383030
+
+Discord gray 99AAB5 
+Discord blue 7289DA
+---------------
+*/
+
+#hometown-img {
+  background-image: url("../images/hometownmap.png");
+}
+
+#botlogo-img {
+  background-image: url("../images/boticon.png");
+}
+
+.bg-image {
+  background-image: url("../images/hometownmap.png");
+  height: 100%;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  background-position: center;;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+
+  border-top: 3px solid #004736;
+  border-bottom: 3px solid #004736;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 30px;
+  text-align: center;
+}
+
+#invite:hover {
+  background-color: rgb(238,238,238);
+  background-color: rgba(238,238,238,0.4);
+  font-size: 30px;
+  padding: 15px;
+}
+
+
+.landscape {
+	background-color: #99AAB5;
+	height: 50%;
+	display: block;
+
+	padding-top: 70px;
+	text-align: center;
+
+	z-index: 5;
+}
+
+.landscape h2{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.landscape p{
+	font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border: 2px solid aqua; 
+}
+
+.grids {
+	background-color: rgba(0,0,0, 0.4);
+	padding: 40px;
+	padding-top: 80px;
+
+ 	font-weight: bold;
+ 	font-size: 18px;
+}
