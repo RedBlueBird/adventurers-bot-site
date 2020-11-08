@@ -2,11 +2,16 @@ body, html {
 	height: 100%;
 }
 
+body {
+    background-color: #a5d87c;
+}
+
 header {
 	position: -webkit-sticky;
   	position: sticky;
   	top: 0;
   	z-index: 10;
+  	margin-top: -20px;
 }
 
 a {
@@ -14,18 +19,21 @@ a {
 	text-decoration: none;
 }
 
+ul{
+  list-style: none;
+}
+
 nav ul{
-	list-style: none;
 	background-color: #6DA83E;
 	border-top: 3px solid #006936;
 	border-bottom: 3px solid #006936;
 
 	font-weight: bold;
 	color: #004736;
-	font-size: 140%;
+	font-size: 22px;
 
 	padding: 20px;
-	padding-left: 110px;
+	padding-left: 100px;
 }
 
 nav ul li{
@@ -48,16 +56,15 @@ nav ul li a img{
 }
 
 
-/*nav ul li a img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}*/
-
 /*
 Color Palettes
 ---------------
 Light green 6DA83E
 Dark green 006936
 Pale dark green 004736
+
+Gold #FAFF00
+Dark gold #FF9900
 
 Light brown BFAC69
 Dark brown 5E462A
@@ -78,11 +85,19 @@ Discord blue 7289DA
   background-image: url("../images/BotIcon.png");
 }
 
-.bg-image {
-  height: 100%;
-
+.blur {
   filter: blur(8px);
   -webkit-filter: blur(8px);
+}
+
+.align-center{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-image {
+  height: 100%;
 
   background-position: center;;
   background-repeat: no-repeat;
@@ -90,7 +105,7 @@ Discord blue 7289DA
   background-size: cover;
 
   margin-top: -30px;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
 }
 
 .bg-text {
@@ -121,17 +136,16 @@ Discord blue 7289DA
 
 
 .landscape {
-	background-color: #99AAB5;
-	height: 50%;
-	display: block;
+	background-color: #86b163;
 
-	padding-top: 70px;
+	padding: 50px;
 	text-align: center;
 
 	z-index: 5;
 }
 
 .landscape h2{
+  font-family: 'Merriweather', serif;
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -140,18 +154,130 @@ Discord blue 7289DA
 	font-size: 20px;
 }
 
+.module1 {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.module2:not(:last-child) {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 350px;
+  max-width: 350px;
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-color: #63cc63;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px #004736;
+}
+
+.module2:last-child{
+  width: 85%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-color: #63cc63;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px #004736;
+}
+
+.module2 h3{
+	font-family: 'Noto Sans JP', serif;
+	font-size: 15px;
+	background-color: #237d23;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.module2 p{
+	background-color: #4ca54c;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.module2 ul{
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: left;
+}
+
+.module2 ul li{
+	display: inline;
+	background-color: #368e36;
+	border: 1px solid green;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.screenshot{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.boring-monologue p{
+  font-size: 19px;
+  background-color: #98cd76;
+  width: 50%;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.shadow img{
+  box-shadow: 0 0 5px 2px #004736;
+  border-radius: 5px;
+}
+
+#group1 img:first-child{
+    transform: translate(-100px, 0px);
+}
+
+#group1 img:last-child{
+    transform: translate(200px, -150px);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    border: 2px solid aqua; 
+    margin: 50px;
 }
 
 .grids {
-	background-color: rgba(0,0,0, 0.4);
-	padding: 40px;
-	padding-top: 80px;
+	padding: 30px;
 
  	font-weight: bold;
  	font-size: 18px;
 }
+
+.grids h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: 70px;
+    font-size: 28px;
+    color: #006936;
+}
+
+.grids p{
+	color: #162d03;
+}
+
+article section:first-child{
+	margin-top: 100px;
+} 
